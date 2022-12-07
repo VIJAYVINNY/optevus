@@ -10,6 +10,7 @@ import { Employee } from 'src/app/models/employee.model';
 export class ListEmployeesComponent {
   Pagetitle: string = "OPTEVUS Employee  Details";
   showImages: boolean = false;
+  
   listFilter: string = "";
   toggleImage() {
     this.showImages = !this.showImages;
