@@ -1,4 +1,4 @@
-<!-- <div class="panel panel-primary" *ngFor="let employee of employees"> 
+<!-- <!-- <div class="panel panel-primary" *ngFor="let employee of employees"> 
   <div class="panel-heading">
     <h3 class="panel-title">{{employee.name}}</h3>
   </div>
@@ -85,57 +85,57 @@
 </div>  -->
 
 <div class="container">
-  <div class="card">
-    <div class="card-header">
-      {{Pagetitle}}
-    </div>
-    <div class="card-body">
-      <div class="row">
-        <div class="col-md-2">Filter By:</div>
-        <div class="col-md-4">
-          <!-- <input type="text"  [(ngModel)]="listFilter"/> -->
+    <div class="card">
+        <div class="card-header">
+            {{Pagetitle}}
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">  Filter By:{{listFilter}} </div>
-      </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-2">Filter By:</div>
+                <div class="col-md-4">
+                    <!-- <input type="text"  [(ngModel)]="listFilter"/> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6"> Filter By:{{listFilter}} </div>
+            </div>
 
-      <div class="row">
-        <div class="col-md-6">
-          <h4>Filter By:</h4>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Filter By:</h4>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table" *ngIf="employees.length">
+                    <thead>
+                        <tr>
+                            <th>
+                                <button class="btn btn-success" (click)="toggleImage()"> {{showImages? 'Hide':'Show'}} Image </button>
+                            </th>
+                            <th>name</th>
+                            <th>gender</th>
+                            <th>Email</th>
+                            <th>phoneNumber</th>
+                            <th>DOB</th>
+                            <th>Package</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let employee of employees">
+
+                            <td>
+                                <img [src]="employee.imageUrl" alt="Path  not found" class="pics" *ngIf="showImages">
+                            </td>
+                            <td>{{employee.name}} </td>
+                            <td>{{employee.gender}}</td>
+                            <td>{{employee.email}}</td>
+                            <td>{{employee.phoneNumber}}</td>
+                            <td>{{employee.DOB}}</td>
+                            <td>{{employee.package}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-      </div>
-
-      <div class="table-responsive">
-        <table class="table" *ngIf="employees.length">
-          <thead>
-            <tr>
-              <th>
-                <button class="btn btn-success" (click)="toggleImage()"> {{showImages? 'Hide':'Show'}} Image </button>
-              </th>
-              <th>name</th>
-              <th>gender</th>
-              <th>Email</th>
-              <th>phoneNumber</th>
-              <th>DOB</th>
-              <th>Package</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr *ngFor="let employee of employees">
-
-              <td>
-                <img [src]="employee.imageUrl" alt="Path  not found" class="pics" *ngIf="showImages">
-              </td>
-              <td>{{employee.name}} </td>
-              <td>{{employee.gender}}</td>
-              <td>{{employee.email}}</td>
-              <td>{{employee.phoneNumber}}</td>
-              <td>{{employee.DOB}}</td>
-              <td>{{employee.package}}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </div>
+    </div> -->
