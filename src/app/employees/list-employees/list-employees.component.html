@@ -127,11 +127,11 @@
               <td>
                 <img [src]="employee.imageUrl" alt="Path  not found" class="pics" *ngIf="showImages">
               </td>
-              <td>{{employee.name}} </td>
-              <td>{{employee.gender}}</td>
+              <td>{{employee.name|uppercase}} </td>
+              <td>{{employee.gender|lowercase}}</td>
               <td>{{employee.email}}</td>
               <td>{{employee.phoneNumber}}</td>
-              <td>{{employee.DOB}}</td>
+              <td>{{employee.DOB|date}}</td>
               <td>{{employee.package}}</td>
             </tr>
           </tbody>
