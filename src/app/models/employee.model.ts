@@ -10,4 +10,5 @@ export class Employee {
     // isAvtive?: boolean;
     imageUrl: any;
     package:any;
+    Address:any;
 }
