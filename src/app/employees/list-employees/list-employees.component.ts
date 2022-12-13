@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Employee } from 'src/app/models/employee.model';
 
 
@@ -7,7 +7,11 @@ import { Employee } from 'src/app/models/employee.model';
   templateUrl: './list-employees.component.html',
   styleUrls: ['./list-employees.component.scss']
 })
-export class ListEmployeesComponent {
+export class ListEmployeesComponent implements OnInit {
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
+  
   Pagetitle: string = "OPTEVUS Employee  Details";
   showImages: boolean = false;
   
@@ -24,7 +28,8 @@ export class ListEmployeesComponent {
       contactPreference: 'Email',
       email: 'vijayarani@softpath.net',
       phoneNumber: 9652733447,
-      DOB:new Date(10/25/1988) ,
+      // DOB:new Date(10/25/1988) ,
+      DOB:"10/25/1988",
       position: "Team Lead",
       // isActive: true,
       imageUrl: "assets/images/mary.png",
@@ -37,7 +42,8 @@ export class ListEmployeesComponent {
       contactPreference: 'Phone',
       email: "Gireeshkapila@softpath.net",
       phoneNumber: 9652733554,
-      DOB:new Date(11/20/1979) ,
+      // DOB:new Date(11/20/1979) ,
+      DOB:"10/25/1988",
       position: 'Senior Architect',
       // isActive: true,
       imageUrl: "assets/images/john.png",
@@ -50,7 +56,8 @@ export class ListEmployeesComponent {
       contactPreference: 'Phone',
       email: "praveenpeddinti@softpath.net",
       phoneNumber: 9658473281,
-      DOB: new Date(3/25/1976),
+      // DOB: new Date(3/25/1976),
+      DOB:"10/25/1988",
       position: 'Team Lead',
       // isActive: false,
       imageUrl: "assets/images/john.png",
@@ -63,7 +70,8 @@ export class ListEmployeesComponent {
       contactPreference: 'Phone',
       email: "sandeepkumar.g@softpath.net",
       phoneNumber: 6589741355,
-      DOB: new Date(3/25/1976),
+      // DOB: new Date(3/25/1976),
+      DOB:"10/25/1988",
       position: 'Associate Director',
       // isActive: false,
       imageUrl: "assets/images/mark.png",
@@ -76,7 +84,8 @@ export class ListEmployeesComponent {
       contactPreference: 'Phone',
       email: "harishkumar.b@softpath.net",
       phoneNumber: 6984759135,
-      DOB: new Date(3/25/1976),
+      // DOB: new Date(3/25/1976),
+      DOB:"10/25/1988",
       position: 'Sr.Associate Director',
       // isActive: false,
       imageUrl: "assets/images/mark.png",
@@ -89,7 +98,8 @@ export class ListEmployeesComponent {
       contactPreference: 'Phone',
       email: "pavankalyan.ch@softpath.net",
       phoneNumber: 9587462358,
-      DOB: new Date(3/25/1976),
+      // DOB: new Date(3/25/1976),
+      DOB:"10/25/1988",
       position: 'Full Stack Developer',
       // isActive: false,
       imageUrl: "assets/images/john.png",
@@ -102,7 +112,8 @@ export class ListEmployeesComponent {
       contactPreference: 'Phone',
       email: "divyachidurala@softpath.net",
       phoneNumber: 8965413879,
-      DOB: new Date(3/25/1974),
+      // DOB: new Date(3/25/1974),
+      DOB:"10/25/1988",
       position: 'Jr Developer',
       // isActive: false,
       imageUrl: "assets/images/mary.png",
