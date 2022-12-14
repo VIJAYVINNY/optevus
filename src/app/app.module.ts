@@ -9,7 +9,7 @@ import { TrainersComponent } from './trainers/trainers.component';
 import { DepartmentsComponent } from './departments/departments.component';
 import { TempCompComponent } from './temp-comp/temp-comp.component';
 import { OptevusComponent } from './optevus/optevus.component';
-import { TryComponent } from './try/try.component';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import { TryComponent } from './try/try.component';
   
     TempCompComponent,
         OptevusComponent,
-        TryComponent,
+    
    
   ],
   imports: [
