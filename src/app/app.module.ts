@@ -21,9 +21,6 @@ import { TryComponent } from './try/try.component';
     TempCompComponent,
         OptevusComponent,
         TryComponent,
-      
-
-    
    
   ],
   imports: [
