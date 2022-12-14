@@ -8,7 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { TrainersComponent } from './trainers/trainers.component';
 import { DepartmentsComponent } from './departments/departments.component';
 import { TempCompComponent } from './temp-comp/temp-comp.component';
-import { ConverttospacePipe } from './converttospace.pipe';
+import { OptevusComponent } from './optevus/optevus.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +18,8 @@ import { ConverttospacePipe } from './converttospace.pipe';
     DepartmentsComponent,
   
     TempCompComponent,
-        ConverttospacePipe,
+        OptevusComponent,
+      
 
     
    
